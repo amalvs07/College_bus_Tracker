@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwall"
+    tools:context=".fragmentadmin.Bus_add">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextBusNOO"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/ic_bus"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="Bus No"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                />
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editTextTextBUsPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/ic_licence"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="No plate"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                />
+<!--            <EditText-->
+<!--                android:id="@+id/editTextTextBusRouteId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:background="@drawable/input"-->
+<!--                android:drawableStart="@drawable/ic_routeid"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/black"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Route Id"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="10"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+            <include layout="@layout/content_bus_route"
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_marginTop="30dp"
+
+                />
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextTextRouteNAme"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:background="@drawable/input"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableLeft="@drawable/ic_routename"-->
+<!--                android:drawableTint="@color/black"-->
+
+<!--                android:ems="10"-->
+
+<!--                android:hint="Route Name"-->
+
+<!--                android:inputType="textPersonName"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+
+
+
+
+            <Button
+                android:id="@+id/AddBuss"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="Add Bus"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginBottom="100dp"
+
+                android:background="@drawable/signup"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

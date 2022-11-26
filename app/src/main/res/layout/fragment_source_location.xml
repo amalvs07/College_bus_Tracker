@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backwall"
+    tools:context=".fragmentadmin.SourceLocationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locations"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp" />
+        <EditText
+            android:id="@+id/editTextTextBusRouteId"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_routeid"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Route Id"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/editTextTextRouteNAme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_routename"
+            android:drawableTint="@color/black"
+
+            android:ems="10"
+
+            android:hint="Route Name"
+
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Source Location"
+            android:layout_gravity="left"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/editTextTextSourcelati"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/location"
+            android:drawableTint="@color/black"
+
+            android:ems="10"
+
+            android:hint="Latitude"
+
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/editTextTextSourceLongi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/location"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Longitude"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/AddLocations"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Add Locations"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginBottom="100dp"
+
+            android:background="@drawable/signup"
+            />
+    </LinearLayout>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/GoToAddLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="90dp"
+            app:fab_colorNormal="@color/grey_300"
+
+            app:fab_colorPressed="@color/grey_400"
+            app:fab_expandDirection="up"
+            app:fab_icon="@drawable/ic_add_location"
+            app:fab_labelsPosition="left" />
+</RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

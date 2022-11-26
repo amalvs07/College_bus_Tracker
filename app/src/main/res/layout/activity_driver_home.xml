@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwall"
+    android:orientation="vertical"
+    tools:context=".Driver_Home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:text="Driver"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+<!--        <androidx.appcompat.widget.SwitchCompat-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="45dp"-->
+<!--            android:layout_below="@id/List"-->
+<!--            android:text="Duty"-->
+
+<!--            android:id="@+id/SwitchShare"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textOn="ON"-->
+<!--            android:textOff="OFF"-->
+<!--            app:showText="true"-->
+<!--            android:thumb="@drawable/customswitch"-->
+<!--            app:track="@drawable/switch_track"-->
+<!--            />-->
+
+        <LinearLayout
+            android:id="@+id/List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_margin="30dp"
+            >
+
+            <Button
+                android:id="@+id/start_service_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_play"
+                android:paddingRight="20dp"
+
+                android:background="@drawable/signup"
+                android:text="ON"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+
+
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/stop_service_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_stop"
+                android:paddingRight="20dp"
+                android:background="@drawable/signup"
+                android:text="OFF"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+
+                android:textSize="18dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@id/List"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="26dp"
+            android:text="Turn on to share location" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/feedbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            app:fab_colorNormal="@color/grey_300"
+
+            app:fab_colorPressed="@color/grey_400"
+            app:fab_expandDirection="up"
+            app:fab_icon="@drawable/ic_feedback"
+            app:fab_labelsPosition="left" />
+    </RelativeLayout>
+
+
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/feedbutton"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:text="Feedback"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_gravity="center"-->
+
+
+<!--        android:background="@drawable/signup"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/start_service_btn"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:text="Start Service"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/stop_service_btn"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Stop Service"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

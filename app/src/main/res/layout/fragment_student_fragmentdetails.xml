@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwall"
+    tools:context=".fragmentadmin.StudentFragmentdetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/DeleteId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/customswitch"
+            android:padding="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete" />
+
+            <ImageView
+                android:id="@+id/Revoked"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/customswitch"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/revoked" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backparameter"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Student "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/graduated" />
+            <TextView
+                android:id="@+id/Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    >
+  <TableRow
+      android:layout_width="match_parent"
+
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingRight="20dp"
+          android:textSize="16dp"
+          android:textStyle="bold"
+          android:text="Full Name" />
+
+      <TextView
+          android:id="@+id/fullNO"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16dp"
+          android:textStyle="bold"
+          android:text="Amal V S" />
+  </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Email ID" />
+
+        <TextView
+            android:id="@+id/editTextTextPersonEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="amal@gmail.com" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Bus No" />
+
+        <TextView
+            android:id="@+id/BusNOOO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="5" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Phone No" />
+
+        <TextView
+            android:id="@+id/PhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="967383783" />
+    </TableRow>
+</TableLayout>
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>

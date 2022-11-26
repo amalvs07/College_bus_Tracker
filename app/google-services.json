@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "551077906034",
+    "project_id": "bustracker-45930",
+    "storage_bucket": "bustracker-45930.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551077906034:android:5200f5bf29784c9b7ce4eb",
+        "android_client_info": {
+          "package_name": "com.example.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551077906034-9s6sj8i3btug32ekjs4vvem1qeobv7oe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pro",
+            "certificate_hash": "8019a745a1208785108be2fe1611cc9716b3ec6f"
+          }
+        },
+        {
+          "client_id": "551077906034-nq2mo22meu85a3g0f5jgj150pokqokol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvKFph78E6jMCFYa75A6LMq3ZKUjTk7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551077906034-nq2mo22meu85a3g0f5jgj150pokqokol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Home">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:background="@drawable/backwall"
+        android:layout_above="@+id/bubbleNavigation"/>
+    <com.example.pro.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bubbleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbarback"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.example.pro.bubblenavigation.BubbleToggleView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/red_400"
+            app:bt_colorInactive="#000000"
+            app:bt_icon="@drawable/iconsstudent"
+            app:bt_title="Student" />
+        <com.example.pro.bubblenavigation.BubbleToggleView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/red_400"
+            app:bt_colorInactive="#000000"
+            app:bt_icon="@drawable/ic_baseline_bus"
+            app:bt_title="Bus" />
+
+
+
+        <com.example.pro.bubblenavigation.BubbleToggleView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/red_400"
+            app:bt_colorInactive="#000000"
+            app:bt_icon="@drawable/ic_baseline_share_location_24"
+            app:bt_title="location" />
+        <com.example.pro.bubblenavigation.BubbleToggleView
+            android:id="@+id/starred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/red_400"
+            app:bt_colorInactive="#000000"
+            app:bt_icon="@drawable/ic_feedback"
+            app:bt_title="Feedback" />
+
+        <com.example.pro.bubblenavigation.BubbleToggleView
+            android:id="@+id/drivers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/red_400"
+            app:bt_colorInactive="#000000"
+            app:bt_icon="@drawable/iconsdriver"
+            app:bt_title="Driver" />
+
+    </com.example.pro.bubblenavigation.BubbleNavigationLinearView>
+</androidx.constraintlayout.widget.ConstraintLayout>
